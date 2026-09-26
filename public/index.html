@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026 Moon Festival — booth map</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="kicker">New Century Festivals · demo</p>
+      <h1>2026 Moon Festival booths</h1>
+      <p class="sub">September 19–20 · 517 Neversink Drive, Port Jervis</p>
+    </div>
+    <div class="who" id="who"></div>
+  </header>
+  <div class="toolbar">
+    <label>Find a booth <input id="find" inputmode="numeric" placeholder="120" autocomplete="off"></label>
+    <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+    <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+    <label class="check"><input type="checkbox" id="only-open"> Open squares only</label>
+    <span class="legend"><i class="swatch open"></i> Open <i class="swatch mine"></i> Yours <i class="swatch held"></i> On hold <i class="swatch booked"></i> Taken <i class="swatch power"></i> Power aisle</span>
+  </div>
+  <main>
+    <div class="map-frame" id="map-frame">
+      <svg id="map" viewBox="0 0 1440 940" role="img" aria-label="Festival booth map"></svg>
+    </div>
+    <aside id="panel" class="panel"></aside>
+  </main>
+  <details class="scan">
+    <summary>Original hand-drawn map</summary>
+    <img src="/moon-2026-map.jpg" alt="Hand-drawn 2026 Moon Festival booth map">
+    <p>The clickable map follows this drawing. Booth 81 is written twice. Booth 181 is not on the sheet. The eight small blank squares by the stage and the flower marks are not for sale.</p>
+  </details>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
